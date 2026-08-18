@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam Torrent</title>
+    <!-- Vinculamos nuestra hoja de estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="steam-navbar">
+        <div class="nav-container">
+            <!-- Logo de Steam (Texto) -->
+            <div class="logo">
+                <h1>STEAM/TORRENT</h1>
+            </div>
+
+            <!-- Enlaces Principales -->
+            <ul class="nav-links">
+                <li><a href="#" class="active">TIENDA</a></li>
+                <li class="dropdown">
+                    <a href="#" id="btn-comunidad">COMUNIDAD ▾</a>
+                    <!-- Submenú desplegable -->
+                    <ul class="dropdown-menu" id="menu-comunidad">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Discusiones</a></li>
+                        <li><a href="#">Workshop</a></li>
+                        <li><a href="#">Mercado</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ACERCA DE</a></li>
+                <li><a href="#">SOPORTE</a></li>
+            </ul>
+
+            <!-- Acciones de Usuario (Instalar / Login) -->
+            <div class="nav-actions">
+                <a href="#" class="btn-install">Instalar Steam</a>
+                <a href="#" class="login">iniciar sesión</a>
+                <span class="divider">|</span>
+                <a href="#" class="lang">idioma</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Vinculamos nuestro script de interactividad -->
+    <script src="main.js"></script>
+</body>
+</html>
