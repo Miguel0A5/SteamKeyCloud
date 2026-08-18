@@ -1,3 +1,3 @@
 # SteamKeyCloud
-Esta es una página web en donde se pueden comprar vieojuegos y tener acceso a ellos desde una biblioteca de comodidad excelente
-despues agregaré mas cosas
+Aqui se va agregar la documentacion que sea necesaria. De momento la estructura de las carpetas va hacer del modo que ya se muestra, por que ahi viene
+lo necesario para iniciar con la base de datos mediante sqlite que es un programa que consume muy pocos recursos.
