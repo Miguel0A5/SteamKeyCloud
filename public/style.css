@@ -1,0 +1,134 @@
+/* Reseteo básico para quitar márgenes por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Fuente similar a la que usa Spotify en su interfaz */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+}
+
+body {
+    background-color: #121212; /* Fondo general modo oscuro de Spotify */
+}
+
+/* Contenedor principal de la barra de navegación */
+.steam-navbar {
+    background-color: #000000; /* Color negro base del header de Spotify */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 960px; /* Ancho máximo para mantenerlo centrado */
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo del Logo */
+.logo {
+    margin-right: 40px;
+}
+.logo h1 {
+    color: #FFFFFF;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+/* Lista de enlaces */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #B3B3B3; /* Gris claro de Spotify para texto inactivo */
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+}
+
+.nav-links li a:hover, 
+.nav-links li a.active {
+    color: #FFFFFF; /* Blanco puro al pasar el ratón */
+}
+
+/* Menú Desplegable */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none; /* Oculto por defecto, el JS lo mostrará */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #282828; /* Gris elevado para tarjetas en Spotify */
+    list-style: none;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.5);
+    padding: 10px 0;
+    margin-top: 10px;
+    border-radius: 4px; /* Un ligero borde redondeado */
+}
+
+.dropdown-menu li a {
+    color: #B3B3B3;
+    padding: 8px 15px;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #3E3E3E; /* Gris un poco más claro al hacer hover */
+    color: #FFFFFF;
+}
+
+/* Utilidad para mostrar el menú desde JS */
+.mostrar-menu {
+    display: block;
+}
+
+/* Acciones a la derecha (Login e Instalar) */
+.nav-actions {
+    margin-left: auto; /* Empuja estas opciones al extremo derecho */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-actions a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #B3B3B3;
+    text-transform: lowercase;
+}
+
+.nav-actions a:hover {
+    color: #FFFFFF;
+}
+
+.nav-actions .divider {
+    color: #B3B3B3;
+}
+
+/* Botón principal verde (Estilo Spotify) */
+.btn-install {
+    background-color: #1ED760; /* Verde brillante característico */
+    color: #000000 !important; /* Texto negro para contraste perfecto */
+    padding: 8px 18px;
+    border-radius: 500px; /* Bordes en forma de píldora */
+    font-weight: bold;
+    transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+.btn-install:hover {
+    background-color: #1FDF64; /* Se vuelve ligeramente más brillante */
+    transform: scale(1.04); /* Efecto de expansión clásico de los botones de Spotify */
+}
